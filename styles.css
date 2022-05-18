@@ -13,12 +13,32 @@ body {
 button {
 	background: #eeeeee;
 	border: none;
+	margin: 8px;
 	padding: 10px 20px;
 	border-radius: 4px;
 	font-size: 1rem;
+	outline: #d5e5ef solid 0px;
+	transition: outline 0.2s ease;
 }
 
 .primary-btn {
 	background: #1f9df5;
 	color: white;
+}
+
+button:hover {
+	outline: #d5e5ef solid 4px;
+}
+
+button:active {
+	outline: #d5e5ef solid 1px;
+}
+
+button:disabled {
+	opacity: 0.9;
+	cursor: not-allowed;
+}
+
+button:disabled:hover {
+	outline: none;
 }
