@@ -8,6 +8,8 @@ body {
 	padding: 20px;
 	width: 80%;
 	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+		rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 button {
@@ -31,14 +33,14 @@ button:hover {
 }
 
 button:active {
-	outline: #d5e5ef solid 1px;
+	outline: #9dd2f3 solid 6px;
 }
 
-button:disabled {
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
 	opacity: 0.9;
 	cursor: not-allowed;
-}
-
-button:disabled:hover {
 	outline: none;
+	scale: 1;
 }
